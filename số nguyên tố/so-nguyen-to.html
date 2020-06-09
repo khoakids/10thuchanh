@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soluong = +prompt ('nhập số lượng số nguyên tố');
+        let count = 0 ;
+        for (let i = 2; count < soluong; i++){
+            let check = true;
+            for (j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    check = false;
+                }
+            }
+        
+        if (check) {
+            document.write(i + "<br>");
+            count++;
+        }
+        }
+
+    </script>
+</body>
+</html>

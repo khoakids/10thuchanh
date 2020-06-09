@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="games()" >Chơi</button>
+    <script>
+        function games() {
+            var a = +prompt ('Nhập a');
+            var b = +prompt ('Nhập b');
+            var x = Math.floor(Math.random() * (a - b + 1)) + b;
+            for (let i = 0 ; i < 3 ; i++) {
+                var c= +prompt('Hãy đoán số');
+                if (c == x) {
+                    document.write('Bạn đã đoán đúng');
+                    break;
+                }
+
+            }
+        }
+        
+    </script>
+</body>
+</html>
